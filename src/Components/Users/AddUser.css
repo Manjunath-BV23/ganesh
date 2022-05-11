@@ -1,0 +1,31 @@
+label {
+    text-align: left;
+    margin-left: 0px;
+    color: red;
+    
+}
+
+.addUserContainer {
+    padding: 5% 8%;
+    text-align: left;
+    justify-content: left;
+}
+input {
+    height: 30px;
+    width: 95%;
+    font-size: large;
+    margin-bottom: 10px ;
+}
+form {
+    border: 1px solid orchid;
+    margin: auto;
+    padding-left: 3%;
+    background-image: url("https://images.unsplash.com/photo-1607604760190-ec9ccc12156e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hpdmF8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60");
+}
+
+.submitBtn {
+    width:30%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}

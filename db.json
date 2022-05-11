@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "name": "Manju",
+      "fatherName": "Veeranna",
+      "mobile": "9849459017",
+      "dateOfBirth": "2022-05-09",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWa9IroZ1Bzd2ACpUSn2XJkL0asOvsxtyOtg&usqp=CAU",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "Manju",
+      "fatherName": "Veeranna",
+      "mobile": "9849459017",
+      "dateOfBirth": "2022-05-09",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWa9IroZ1Bzd2ACpUSn2XJkL0asOvsxtyOtg&usqp=CAU",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "name": "manju",
+      "fatherName": "mmam",
+      "mobile": "9897",
+      "dateOfBirth": "2022-05-10",
+      "image": "C:\\fakepath\\174G1A0336.jpeg",
+      "password": "manju",
+      "id": 5
+    },
+    {
+      "name": "manju",
+      "fatherName": "mmam",
+      "mobile": "9897",
+      "dateOfBirth": "2022-05-10",
+      "image": "C:\\fakepath\\174G1A0336.jpeg",
+      "password": "manju",
+      "id": 6
+    },
+    {
+      "name": "Ravi",
+      "fatherName": "chikkanna",
+      "mobile": "989898",
+      "dateOfBirth": "2022-05-09",
+      "image": "C:\\fakepath\\Lord-Hanuman-Image-Gallery.jpg",
+      "password": "ravi",
+      "id": 7
+    },
+    {
+      "name": "sowji",
+      "fatherName": ",manj",
+      "mobile": "98765",
+      "dateOfBirth": "2022-05-09",
+      "image": "C:\\fakepath\\20180702_104931.jpg",
+      "password": "manju",
+      "id": 8
+    }
+  ],
+  "events": [],
+  "owners": []
+}

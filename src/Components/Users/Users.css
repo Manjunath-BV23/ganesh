@@ -1,0 +1,17 @@
+.usersDiv {
+    display: grid;
+    padding: 5% ;
+    gap: 15px;
+    grid-template-columns: repeat(2, 45%);
+}
+.usersDiv > div {
+    padding: 5% 10%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    opacity: 2;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+img {
+    width: 80%;
+
+}
