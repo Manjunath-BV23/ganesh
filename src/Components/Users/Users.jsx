@@ -7,17 +7,17 @@ import "./Users.css"
 export const Users = () => {
     const dispatch = useDispatch()
     const users = useSelector((store => store.user.user))
-    // console.log("users in ori:",users)
+    console.log("users",users)
 
-    useEffect(()=> {
-        getUsers()
-    },[])
+    // useEffect(()=> {
+    //     getUsers()
+    // },[])
 
-    const getUsers = () => {
-        axios.get("http://localhost:8080/users").then((res) => {
-            dispatch(addUser(res.data))
-        })
-    }
+    // const getUsers = () => {
+    //     axios.get("http://localhost:8080/users").then((res) => {
+    //         dispatch(addUser(res.data))
+    //     })
+    // }
 
     return (
         <div className="usersDiv">
