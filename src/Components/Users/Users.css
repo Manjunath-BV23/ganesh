@@ -1,17 +1,33 @@
 .usersDiv {
     display: grid;
     padding: 5% ;
-    gap: 15px;
-    grid-template-columns: repeat(2, 45%);
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
 }
 .usersDiv > div {
-    padding: 5% 10%;
+    padding: 5% 5%;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     opacity: 2;
     background-color: aquamarine;
     border-radius: 10px;
+    /* line-height: 10px; */
+    border: 5px solid ;
+    height:300px;
+
 }
 img {
     width: 80%;
+    height: 50%
 
+}
+p {
+    text-align: left;
+    color: darkorange;
+    /* text-decoration: wavy; */
+    font-weight: bolder;
+}
+span {
+    color:blue;
+    text-align: center;
+    
 }

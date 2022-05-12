@@ -35,8 +35,19 @@ export default function AccountMenu() {
     setAnchorEl(null);
   };
   return (
-    <React.Fragment>
-      <Box sx={{ display: 'flex', gap:"4px", justifyContent:"space-around", alignItems: 'center', textAlign: 'center', backgroundColor: "#DC2C3B" }}>
+    <nav style={{
+      // display: "inline",
+      width:"100%",
+      overflow: "hidden",
+      position: "fixed",
+      // marginRight:"0px",
+      backgroundColor: "#DC2C3B",
+      display: "flex",
+      justifyContent:"space-evenly",
+      alignItems: 'center'
+    }}>
+    {/* <React.Fragment> */}
+      {/* <Box sx={{ display: 'flex', justifyContent:"space-between", alignItems: 'center', }}> */}
         <Typography sx={{ minWidth: 70 }}><Link to="/" style={{ textDecoration: 'none', color: 'black', padding: "5px", backgroundColor: "yellow" }}>Home</Link></Typography>
         <Typography sx={{ minWidth: 70 }}><Link to="/users" style={{ textDecoration: 'none', color: 'black', padding: "5px", backgroundColor: "yellow" }}>Users</Link></Typography>
         <Typography sx={{ minWidth: 70 }}><Link to="/gallery" style={{ textDecoration: 'none', color: 'black', padding: "5px", backgroundColor: "yellow" }}>Gallery</Link></Typography>
@@ -54,7 +65,7 @@ export default function AccountMenu() {
             <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
           </IconButton>
         </Tooltip>
-      </Box>
+      {/* </Box> */}
       <Menu
         anchorEl={anchorEl}
         id="account-menu"
@@ -136,6 +147,7 @@ export default function AccountMenu() {
           <Link to="/gallery" style={{ textDecoration: 'none', color: 'green' }}>Logout</Link>
         </MenuItem>
       </Menu>
-    </React.Fragment>
+    {/* </React.Fragment> */}
+    </nav>
   );
 }

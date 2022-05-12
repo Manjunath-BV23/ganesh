@@ -13,7 +13,7 @@ export const AllRoutes = () => {
         <>
             {/* <Navbar/> */}
             <AccountMenu/>
-            {/* <AddUser/> */}
+            <AddUser/>
             <Routes>
                 <Route path = "/" element={<Home/>} ></Route>
                 <Route path = "/users" element={<Users/>} ></Route>

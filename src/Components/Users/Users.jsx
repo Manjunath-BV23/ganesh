@@ -7,7 +7,7 @@ import "./Users.css"
 export const Users = () => {
     const dispatch = useDispatch()
     const users = useSelector((store => store.user.user))
-    console.log("users in ori:",users)
+    // console.log("users in ori:",users)
 
     useEffect(()=> {
         getUsers()
@@ -23,10 +23,10 @@ export const Users = () => {
         <div className="usersDiv">
             {users.map((e) => (
                 <div>
-                    <img src={`${e.image}`} alt="img" />
-                    <h4>Id: {e.id}</h4>
-                    <h4>Name: {e.name}</h4>
-                    <h4>Mobile: {e.mobile}</h4>
+                    <img src={e.image} alt="img" />
+                    <p>Id: <span>{e.id}</span></p>
+                    <p>Name: <span>{e.name}</span></p>
+                    <p>Mobile: <span>{e.mobile}</span></p>
                 </div>
             ))}
         </div>

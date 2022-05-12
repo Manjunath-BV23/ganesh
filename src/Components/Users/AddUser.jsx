@@ -28,10 +28,34 @@ export const AddUser = () => {
     const handleChange = (e) => {
       console.log(e.target.value)
         const {className, value} = e.target;
+        // ({...data,[e.target.name]:e.target.value})
         setUser({
             ...user,
             [className]:value,
         })
+    }
+    // const handleFile = (event) => {
+      
+    //     let img = event.target.files[0];
+    //     setUser({
+    //       ...user,
+    //       image: URL.createObjectURL(img)
+    //     });
+      
+    // }
+    const handleImageChange =(e) => {
+
+      let reader = new FileReader();
+      let file = e.target.files[0];
+  
+      reader.onloadend = () => {
+        setUser({
+          ...user,
+          image: reader.result
+      });
+      }
+  
+      reader.readAsDataURL(file)
     }
 
     const getUsers = () => {
@@ -60,8 +84,8 @@ export const AddUser = () => {
           <label>Date Of Birth :</label> <br/>
           <input value={user.dateOfBirth} onChange={handleChange} type="date" className="dateOfBirth"placeholder="date of birth" required />
           <br />
-          <label>Upload your photo here :</label> <br/>
-          <input value={user.image} onChange={handleChange} type="file" className="image"placeholder="" required />
+          <label >Upload your photo here :</label> <br/>
+          <input  onChange={handleImageChange} type="file" className="image"  accept="image/png, image/jpeg, image/jpg" required />
           <br />
           <label>Set Password :</label> <br/>
           <input value={user.password} onChange={handleChange} type="password" className="password" placeholder="Enter password" required />

@@ -25,7 +25,5 @@ form {
 
 .submitBtn {
     width:30%;
-    margin: auto;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 20px;    
 }
